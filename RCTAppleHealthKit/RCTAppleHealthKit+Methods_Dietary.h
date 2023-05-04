@@ -16,6 +16,8 @@
 - (void)getWater:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback;
 - (void)getWaterSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback;
 
+- (void)getCaffeine:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback;
+
 - (void)dietary_getEnergyConsumedSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback;
 - (void)dietary_getProteinSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback;
 - (void)dietary_getTotalFatSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback;

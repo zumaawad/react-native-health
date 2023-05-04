@@ -364,6 +364,12 @@ RCT_EXPORT_METHOD(getWaterSamples:(NSDictionary *)input callback:(RCTResponseSen
     [self getWaterSamples:input callback:callback];
 }
 
+RCT_EXPORT_METHOD(getCaffeine:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+{
+    [self _initializeHealthStore];
+    [self getCaffeine:input callback:callback];
+}
+
 RCT_EXPORT_METHOD(getHeartRateSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
 {
     [self _initializeHealthStore];
